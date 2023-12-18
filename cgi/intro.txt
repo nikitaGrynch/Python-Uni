@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+ServerAdmin webmaster@localhost
+DocumentRoot "/Users/grynch/Files/ITStep/Python-Uni/cgi"
+ServerName py202.loc
+ServerAlias www.py202.loc
+ErrorLog "/Users/grynch/Files/ITStep/Python-Uni/cgi/error.log"
+CustomLog "/Users/grynch/Files/ITStep/Python-Uni/cgi/access.log" common
+<Directory "/Users/grynch/Files/ITStep/Python-Uni/cgi">
+AllowOverride All
+Options -Indexes +ExecCGI
+AddHandler cgi-script .py
+Require all granted
+</Directory>
+</VirtualHost>

@@ -1,0 +1,26 @@
+[Mon Dec 18 15:18:08.165825 2023] [include:warn] [pid 61570] [client ::1:64713] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
+[Mon Dec 18 15:18:08.166759 2023] [include:warn] [pid 61570] [client ::1:64713] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
+[Mon Dec 18 15:21:24.846741 2023] [include:warn] [pid 61571] [client ::1:64828] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
+[Mon Dec 18 15:21:24.847766 2023] [include:warn] [pid 61571] [client ::1:64828] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
+[Mon Dec 18 15:26:20.558196 2023] [include:warn] [pid 61572] [client ::1:64887] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
+[Mon Dec 18 15:26:20.559066 2023] [include:warn] [pid 61572] [client ::1:64887] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
+[Mon Dec 18 15:45:16.122399 2023] [include:warn] [pid 61573] [client ::1:65100] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
+[Mon Dec 18 15:45:16.123247 2023] [include:warn] [pid 61573] [client ::1:65100] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
+[Mon Dec 18 15:45:21.538109 2023] [cgi:error] [pid 61574] [client ::1:65101] AH01215: (13)Permission denied: exec of '/Users/grynch/Files/ITStep/Python-Uni/cgi/index.py' failed: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Mon Dec 18 15:45:21.539768 2023] [cgi:error] [pid 61574] [client ::1:65101] End of script output before headers: index.py
+[Mon Dec 18 15:47:43.465530 2023] [cgi:error] [pid 61759] [client ::1:65113] AH01215: (13)Permission denied: exec of '/Users/grynch/Files/ITStep/Python-Uni/cgi/index.py' failed: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Mon Dec 18 15:47:43.469468 2023] [cgi:error] [pid 61759] [client ::1:65113] End of script output before headers: index.py
+[Mon Dec 18 15:47:44.656400 2023] [cgi:error] [pid 61570] [client ::1:65114] AH01215: (13)Permission denied: exec of '/Users/grynch/Files/ITStep/Python-Uni/cgi/index.py' failed: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Mon Dec 18 15:47:44.658064 2023] [cgi:error] [pid 61570] [client ::1:65114] End of script output before headers: index.py
+[Mon Dec 18 15:48:55.387106 2023] [cgi:error] [pid 61571] [client ::1:65147] AH01215: (13)Permission denied: exec of '/Users/grynch/Files/ITStep/Python-Uni/cgi/index.py' failed: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Mon Dec 18 15:48:55.390332 2023] [cgi:error] [pid 61571] [client ::1:65147] End of script output before headers: index.py
+[Mon Dec 18 15:48:56.715310 2023] [cgi:error] [pid 61572] [client ::1:65148] AH01215: (13)Permission denied: exec of '/Users/grynch/Files/ITStep/Python-Uni/cgi/index.py' failed: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Mon Dec 18 15:48:56.716782 2023] [cgi:error] [pid 61572] [client ::1:65148] End of script output before headers: index.py
+[Mon Dec 18 15:48:57.658111 2023] [cgi:error] [pid 61574] [client ::1:65149] AH01215: (13)Permission denied: exec of '/Users/grynch/Files/ITStep/Python-Uni/cgi/index.py' failed: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Mon Dec 18 15:48:57.660251 2023] [cgi:error] [pid 61574] [client ::1:65149] End of script output before headers: index.py
+[Mon Dec 18 15:49:21.132864 2023] [cgi:error] [pid 63637] [client ::1:65152] AH01215: (13)Permission denied: exec of '/Users/grynch/Files/ITStep/Python-Uni/cgi/index.py' failed: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Mon Dec 18 15:49:21.137886 2023] [cgi:error] [pid 63637] [client ::1:65152] End of script output before headers: index.py
+[Mon Dec 18 16:21:59.535414 2023] [include:warn] [pid 63639] [client ::1:54806] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
+[Mon Dec 18 16:21:59.536568 2023] [include:warn] [pid 63639] [client ::1:54806] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
+[Mon Dec 18 16:22:01.336534 2023] [include:warn] [pid 63639] [client ::1:54806] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
+[Mon Dec 18 16:22:01.337203 2023] [include:warn] [pid 63639] [client ::1:54806] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /index.html
