@@ -86,3 +86,7 @@
 [Tue Dec 26 00:22:12.873521 2023] [cgi:error] [pid 67959] [client ::1:57000] AH01215: ERROR:root:('id', 'id_user', 'id_product', 'cnt'): /Users/grynch/Files/ITStep/Python-Uni/cgi/api/cart.py, referer: http://localhost/
 [Tue Dec 26 00:22:39.216627 2023] [include:warn] [pid 67777] [client ::1:57132] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/
 [Tue Dec 26 00:23:17.737027 2023] [include:warn] [pid 67958] [client ::1:57296] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/
+[Tue Dec 26 15:26:12.130547 2023] [include:warn] [pid 67949] [client 127.0.0.1:51697] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://127.0.0.1/
+[Tue Dec 26 15:49:17.481064 2023] [include:warn] [pid 67958] [client ::1:57578] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/
+[Tue Dec 26 15:49:39.959793 2023] [include:warn] [pid 67949] [client ::1:57676] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/
+[Tue Dec 26 15:49:54.320970 2023] [include:warn] [pid 67776] [client ::1:57736] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/
