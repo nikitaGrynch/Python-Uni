@@ -13,7 +13,8 @@ import os
 envs = {k: v for k, v in os.environ.items() if k in ["REQUEST_URI", "QUERY_STRING", "REQUEST_METHOD", "REMOTE_ADDR", "REQUEST_SCHEME"]}
 envs_html = f"<ul>{ "".join([f"<li>{k} = {v}</li>" for k,v in envs.items()]) }"
 envs_html += "</ul>"
-envs_html += f"<p>QUERY_STRING: {f"<ul>{ "".join([f"<li>{k} = {v}</li>" for k,v in {k: v for k, v in (pair.split('=') for pair in envs["QUERY_STRING"].split('&'))}.items()]) }"}</p>"
+if envs["QUERY_STRING"]:
+    envs_html += f"<p>QUERY_STRING: {f"<ul>{ "".join([f"<li>{k} = {v}</li>" for k,v in {k: v for k, v in (pair.split('=') for pair in envs["QUERY_STRING"].split('&'))}.items()]) }"}</p>"
 
 print( "Content-Type: text/html; charset=cp1251" )
 print( "Connection: close" )

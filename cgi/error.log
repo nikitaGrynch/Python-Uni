@@ -275,3 +275,13 @@
 [Thu Dec 28 01:26:39.018535 2023] [cgi:error] [pid 72937] [client ::1:53334] AH01215:                     ^^^^^^^: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
 [Thu Dec 28 01:26:39.018599 2023] [cgi:error] [pid 72937] [client ::1:53334] AH01215: ValueError: too many values to unpack (expected 3): /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
 [Thu Dec 28 01:26:39.023339 2023] [cgi:error] [pid 72937] [client ::1:53334] End of script output before headers: index.py
+[Thu Dec 28 01:33:57.099793 2023] [include:warn] [pid 72973] [client ::1:55214] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/?x=20&y=10
+[Thu Dec 28 01:33:57.459903 2023] [cgi:error] [pid 72973] [client ::1:55214] AH01215: ERROR:root:SQL error: /Users/grynch/Files/ITStep/Python-Uni/cgi/api/product.py, referer: http://localhost/?x=20&y=10
+[Thu Dec 28 01:35:38.667623 2023] [cgi:error] [pid 72939] [client ::1:55636] AH01215: Traceback (most recent call last):: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Thu Dec 28 01:35:38.668947 2023] [cgi:error] [pid 72939] [client ::1:55636] AH01215:   File "/Users/grynch/Files/ITStep/Python-Uni/cgi/index.py", line 16, in <module>: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Thu Dec 28 01:35:38.669102 2023] [cgi:error] [pid 72939] [client ::1:55636] AH01215:     envs_html += f"<p>QUERY_STRING: {f"<ul>{ "".join([f"<li>{k} = {v}</li>" for k,v in {k: v for k, v in (pair.split('=') for pair in envs["QUERY_STRING"].split('&'))}.items()]) }"}</p>": /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Thu Dec 28 01:35:38.669186 2023] [cgi:error] [pid 72939] [client ::1:55636] AH01215:                                                                                                  ^^^^: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Thu Dec 28 01:35:38.669237 2023] [cgi:error] [pid 72939] [client ::1:55636] AH01215: ValueError: not enough values to unpack (expected 2, got 1): /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Thu Dec 28 01:35:38.672737 2023] [cgi:error] [pid 72939] [client ::1:55636] End of script output before headers: index.py
+[Thu Dec 28 01:36:01.690631 2023] [include:warn] [pid 72936] [client ::1:55731] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/
+[Thu Dec 28 01:36:01.997291 2023] [cgi:error] [pid 72936] [client ::1:55731] AH01215: ERROR:root:SQL error: /Users/grynch/Files/ITStep/Python-Uni/cgi/api/product.py, referer: http://localhost/
