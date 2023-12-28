@@ -19,9 +19,9 @@ if envs["QUERY_STRING"]:
 print( "Content-Type: text/html; charset=cp1251" )
 print( "Connection: close" )
 print()   # порожній рядок - кінець заголовків
-print(envs_html)
-# with open( 'home.html' ) as file :
-#     print( file.read() )
+# print(envs_html)
+with open( 'home.html' ) as file :
+    print( file.read() )
 
 
 """

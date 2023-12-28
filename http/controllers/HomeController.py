@@ -1,8 +1,6 @@
 import appsettings
 
 from starter import MainHandler
-import inspect
-import os
 
 
 class HomeController:
@@ -14,21 +12,9 @@ class HomeController:
 
         
     def index(self) -> None :
-        self.return_view(f"{self.view_path}/{inspect.currentframe().f_code.co_name}.html")
+        self.handler.return_view()
 
     def privacy(self) :
-        self.return_view(f"{self.view_path}/{inspect.currentframe().f_code.co_name}.html")
+        self.handler.return_view()
 
-    def return_view(self, action_name: str) -> None:
-        layout_name = f"{appsettings.VIEWS_PATH}/_layout.html"
-        if not os.path.isfile(layout_name) or not os.path.isfile(action_name):
-            print(("return_view::: file(s) not found: ", action_name, layout_name))
-            self.handler.send_404()
-            return
-        with open(action_name, 'r') as action:
-            with open(layout_name, 'r') as layout:
-                self.handler.send_response(200)
-                self.handler.send_header('Content-Type', 'text/html')
-                self.handler.end_headers()
-                self.handler.wfile.write(layout.read().replace('<!-- RenderBody -->', action.read()).encode())
 

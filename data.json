@@ -1,12 +1,9 @@
 {
-                        "str": "Hello, world!",
-                        "digital": 123,
-                        "float": 1.5,
-                        "bool1": true, 
-                        "null": null,
-                        "obj": {
-                            "bool0": false,
-                            "str": "A string"
-                        },
-                        "arr": [1, 2, 3, 4, 5]
-            }
+  "str": "Hello, world!",
+  "digital": 123,
+  "float": 1.5,
+  "bool1": true,
+  "null": null,
+  "obj": { "bool0": false, "str": "A string" },
+  "arr": [1, 2, 3, 4, 5]
+}
