@@ -67,6 +67,21 @@ class Cart:
         except Exception as err:
             logging.error(str(err), { 'err': str(err)})
             raise RuntimeError(err)
+    
+    def get_items(id_user: str) -> list:
+        # ret = []
+        sql = "SELECT c.*, p.name, p.price, p.image_url FROM cart c JOIN products p ON c.id_product = p.id WHERE c.id_user=%s"
+        try:
+            db = connect_db()
+            with db.cursor(dictionary=True) as cursor :
+                cursor.execute( sql, (id_user,) )
+                return [row for row in cursor]
+        except mysql.connector.Error as err :
+            logging.error(str(err), {'sql': sql, 'err': err})
+            raise RuntimeError(err)
+        except Exception as err:
+            logging.error(str(err), { 'err': str(err)})
+            raise RuntimeError(err)
 
 class Auth:
     def get_user_id_by_token(token : str) -> str | None :

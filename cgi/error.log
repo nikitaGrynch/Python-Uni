@@ -287,3 +287,4 @@
 [Thu Dec 28 01:36:01.997291 2023] [cgi:error] [pid 72936] [client ::1:55731] AH01215: ERROR:root:SQL error: /Users/grynch/Files/ITStep/Python-Uni/cgi/api/product.py, referer: http://localhost/
 [Thu Dec 28 01:36:59.903918 2023] [include:warn] [pid 72938] [client ::1:56004] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/?x=20&y=10
 [Thu Dec 28 01:37:00.231129 2023] [cgi:error] [pid 72938] [client ::1:56004] AH01215: ERROR:root:SQL error: /Users/grynch/Files/ITStep/Python-Uni/cgi/api/product.py, referer: http://localhost/?x=20&y=10
+[Fri Dec 29 11:39:28.185793 2023] [include:warn] [pid 78668] [client ::1:49410] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/?x=20&y=10

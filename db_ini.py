@@ -8,3 +8,5 @@ connection_params = {
     'use_unicode': True,
     'collation': 'utf8mb4_unicode_ci'
 }
+
+# ./mysql -P 3306 -u py202_user -p'pass_202'

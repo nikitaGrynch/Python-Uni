@@ -41,7 +41,6 @@ class MainHandler(BaseHTTPRequestHandler):
             }
             self.response_headers['Set-Cookie'] = f'session_id={session_id}'
         self.session = MainHandler.sessions[session_id]
-        print(self.session)
 
 
         path_parts = path.split('/')
@@ -62,24 +61,23 @@ class MainHandler(BaseHTTPRequestHandler):
         controller_action()
         return
     
-
-    def return_view(self, action_name = None) -> None:
-        layout_name = f"{appsettings.VIEWS_PATH}/_layout.html"
-        controller_object = inspect.currentframe().f_back.f_locals['self']
-        view_path = f"{appsettings.VIEWS_PATH}/{controller_object.short_name}"
-        action_name = f"{view_path}/{inspect.currentframe().f_back.f_code.co_name}.html"
-        if not os.path.isfile(layout_name) or not os.path.isfile(action_name):
-            print(("return_view::: file(s) not found: ", action_name, layout_name))
-            self.send_404()
-            return
-        with open(action_name, 'r') as action:
-            with open(layout_name, 'r') as layout:
-                self.send_response(200)
-                self.send_header('Content-Type', 'text/html')
-                for k, v in self.response_headers.items() :
-                    self.send_header(k, v)
-                self.end_headers()
-                self.wfile.write(layout.read().replace('<!-- RenderBody -->', action.read()).encode())
+    def end(self, content:any) :
+        status_code = 200
+        if content is None:
+            status_code = 204
+        elif type(content) is str:
+            if 'Content-Type' not in self.response_headers:
+                self.response_headers[ 'Content-Type' ] = 'text/html'
+        else:
+            content = json.dumps(content)
+            self.response_headers[ 'Content-Type' ] = 'application/json'
+        self.send_response(status_code)
+        for k, v in self.response_headers.items():
+            self.send_header(k, v)
+        self.end_headers()
+        if content:
+            self.wfile.write(content.encode('utf-8'))
+        self.connection.close()
 
     def flush_file(self, filename) -> None:
         if '..' in filename or not os.path.isfile(filename):
