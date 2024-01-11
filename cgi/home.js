@@ -35,7 +35,7 @@ function authButtonClick() {
       Authorization: `Basic ${credentials}`,
     },
   })
-    .then((r) => r.text())
+    .then((r) => r.json())
     .then(console.log);
   // console.log("Clicked");
 }

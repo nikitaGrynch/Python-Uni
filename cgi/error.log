@@ -3,3 +3,11 @@
 [Wed Jan 10 21:30:12.542970 2024] [cgi:error] [pid 68248] [client ::1:50251] AH01215:     import db_ini: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
 [Wed Jan 10 21:30:12.543009 2024] [cgi:error] [pid 68248] [client ::1:50251] AH01215: ModuleNotFoundError: No module named 'db_ini': /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
 [Wed Jan 10 21:30:12.547026 2024] [cgi:error] [pid 68248] [client ::1:50251] End of script output before headers: index.py
+[Wed Jan 10 23:06:53.556250 2024] [cgi:error] [pid 68249] [client ::1:51319] AH01215: Traceback (most recent call last):: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Wed Jan 10 23:06:53.556970 2024] [cgi:error] [pid 68249] [client ::1:51319] AH01215:   File "/Users/grynch/Files/ITStep/Python-Uni/cgi/index.py", line 27, in <module>: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Wed Jan 10 23:06:53.556989 2024] [cgi:error] [pid 68249] [client ::1:51319] AH01215:     print(envs_html): /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Wed Jan 10 23:06:53.557006 2024] [cgi:error] [pid 68249] [client ::1:51319] AH01215:           ^^^^^^^^^: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Wed Jan 10 23:06:53.557030 2024] [cgi:error] [pid 68249] [client ::1:51319] AH01215: NameError: name 'envs_html' is not defined: /Users/grynch/Files/ITStep/Python-Uni/cgi/index.py
+[Wed Jan 10 23:18:20.888778 2024] [include:warn] [pid 68249] [client ::1:52391] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/
+[Wed Jan 10 23:19:08.901619 2024] [include:warn] [pid 68187] [client ::1:52618] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/
+[Wed Jan 10 23:19:26.387839 2024] [include:warn] [pid 68249] [client ::1:52699] AH01374: mod_include: Options +Includes (or IncludesNoExec) wasn't set, INCLUDES filter removed: /tpl/product.html, referer: http://localhost/
