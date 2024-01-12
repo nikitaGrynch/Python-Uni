@@ -50,8 +50,17 @@ function infoButtonClick() {
       "My-Header": "my-value",
     },
   })
-    .then((r) => r.json())
-    .then(console.log);
+    .then((r) => {
+      if (!r.ok) {
+        document.getElementById("user-token").value = "";
+        alert("Authorization error");
+        return;
+      }
+      return r.json();
+    })
+    .then((data) => {
+      document.getElementById("user-token").value = data;
+    });
   // console.log("Clicked");
 }
 /*
