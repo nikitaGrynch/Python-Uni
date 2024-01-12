@@ -52,14 +52,16 @@ function infoButtonClick() {
   })
     .then((r) => {
       if (!r.ok) {
-        document.getElementById("user-token").value = "";
-        alert("Authorization error");
-        return;
+        throw new Error("Auth error");
       }
       return r.json();
     })
     .then((data) => {
       document.getElementById("user-token").value = data;
+    })
+    .catch((e) => {
+      document.getElementById("user-token").value = "";
+      alert(e.message);
     });
   // console.log("Clicked");
 }
